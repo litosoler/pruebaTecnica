@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selects Dinamicos</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+	<nav></nav>
+	<section id="selectores" class="container">
+		<form class="row">
+
+			<div class="form-group col-4">
+				<label for="categorias">Categorias: </label>
+				<select id="categorias" class="form-control" onchange="categoriaSeleccionada()">
+					<option value="comida">Comida</option>
+					<option value="ropa">Ropa</option>
+				</select>
+			</div>
+			<div class="form-group col-4 " >
+				<label for="productos">Productos:</label>
+				<select id="productos" class="form-control" onchange="productoSeleccionado()"></select>
+			</div>
+			<div class="form-group col-4">
+				<label for="marcas">Marcas:</label>
+				<select id="marcas" class="form-control" onchange="modificarDatosGrafico()"></select>
+			</div>
+		</form>
+	</section>
+	<section class="col-12">
+		<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+</html>

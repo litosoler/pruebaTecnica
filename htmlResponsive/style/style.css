@@ -1,0 +1,15 @@
+#cuadro{
+	position: relative;
+	top: 20%;
+	left: 20%;
+	height: 60%;
+	width: 60%;
+}
+
+#cuadro2{
+	background-color: #007F09;
+	height: 100%;
+	width: 100%;
+}
+
+
